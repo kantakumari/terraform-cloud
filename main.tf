@@ -11,6 +11,11 @@ provider "google" {
   region  = var.region
   zone    = var.zone
 }
+variable "gcp_credentials" {
+  type = string
+  sensitive = true
+  description = "Google Cloud service account credentials"
+}
 resource "google_storage_bucket" "auto-expire" {
   name          = var.bucket_name
   location      = var.bucket_location
