@@ -19,3 +19,8 @@ variable "bucket_name" {
   type = string 
   default = "myuniquebucketery"
 }
+variable "GOOGLE_CREDENTIALS" {
+  type = string
+  sensitive = true
+  description = "Google Cloud service account credentials"
+}
