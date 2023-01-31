@@ -1,4 +1,4 @@
 module "consul" {
   source = "../"
-  bucket_name = "pdev-my-uniquedev-bucketery-dev-buckets"
+  bucket_name = "duubudbdupdev-my-uniquedev-bucketery-dev-buckets"
 }
